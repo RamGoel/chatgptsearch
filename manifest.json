@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Chat Title Search",
+  "version": "1.0",
+  "description": "Search and navigate chat titles from chatgpt.com",
+  "permissions": ["activeTab"],
+  "host_permissions": ["https://chatgpt.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://chatgpt.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

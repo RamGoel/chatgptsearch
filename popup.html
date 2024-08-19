@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+<head>
+    <style>
+        * {
+            font-family: "Inter", sans-serif;
+        }
+
+        body {
+            width: 300px;
+        }
+
+        h1 {
+            margin: 0;
+            margin-top: 20px;
+            line-height: 20px;
+
+        }
+
+        #search {
+            height: 40px;
+            border: 1px solid lightgray;
+            padding-left: 10px;
+            width: 90%;
+            border-radius: 10px;
+            margin: 0px;
+        }
+
+
+        #results {
+            max-height: 300px;
+            margin-top: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="">
+        Search GPT
+    </h1>
+    <p>Search what you asked GPT</p>
+    <input type="text" id="search" placeholder="Search chat titles...">
+    <div id="results"></div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
